@@ -115,5 +115,5 @@ def organize_schools(*schools)
   end
   
   locations.uniq!
-  
+  puts locations
 end
