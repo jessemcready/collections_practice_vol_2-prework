@@ -104,10 +104,11 @@ end
 
 def organize_schools(*schools)
   # first loop through and find all locations
-  locations
+  organized = {}
+  locations = []
   schools.each do |school|
     school.each do |key, value|
-        
+       puts value 
     end
   end
 end
