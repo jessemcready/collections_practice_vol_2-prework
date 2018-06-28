@@ -89,7 +89,17 @@ def merge_data(keys, data)
 end
 
 def find_cool(*args)
-  
+  cool = []
+  args.each do |arg|
+    arg.each do |pair|
+      pair.each do |key, value|
+          if value == "cool"
+            cool << pair  
+          end
+      end
+    end
+  end
+  cool
 end
 
 def organize_schools(*schools)
