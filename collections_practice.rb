@@ -49,7 +49,6 @@ def count_elements(*args)
     arg.each do |pair|
       count = arg.count(pair)
       pair[:count] = count
-      pair.delete_if
     end
   end
 end
