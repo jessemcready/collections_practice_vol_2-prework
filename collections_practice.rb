@@ -127,7 +127,6 @@ def organize_schools(*schools)
         end
         organized[loc] = schools_in_same_location
       end
-      puts organized
     end
   end
   organized
