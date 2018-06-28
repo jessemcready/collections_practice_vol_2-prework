@@ -48,6 +48,7 @@ def count_elements(*args)
   args.each do |arg|
     arg.each do |pair|
       count = arg.count(pair)
+      arg.uniq!
       pair[:count] = count
     end
   end
