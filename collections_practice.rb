@@ -105,6 +105,7 @@ end
 def organize_schools(*schools)
   puts schools.values
   schools.each do |school|
+    puts school.values
     school.rehash  
   end
 end
