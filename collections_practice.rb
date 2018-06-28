@@ -11,8 +11,9 @@ def begins_with_r(*args)
 end
 
 def contain_a(*args)
+  args_with_a = []
   args.each do |arg|
-    
+    if arg.include
   end
 end
 
