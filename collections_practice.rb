@@ -62,9 +62,12 @@ def merge_data(keys, data)
   keys.each do |pair|
     pair.each do |key, value|
       merged_person[key] = value
+      puts "MERGED_PERSON #{merged_person}"
       data.each do |person|
         person.each do |name, characteristics|
-          if name == merged_person[:name]
+          if name == merged_person[:first_name]
+            
+          end
         end
       end
     end
