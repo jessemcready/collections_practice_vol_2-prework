@@ -103,5 +103,5 @@ def find_cool(*args)
 end
 
 def organize_schools(*schools)
-  
+  schools.each 
 end
