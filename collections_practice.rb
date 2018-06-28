@@ -119,16 +119,16 @@ def organize_schools(*schools)
   locations.each do |loc|
     schools.each do |school|
       schools_in_same_location = []
-      puts school
       school.each do |key, value|
-        puts key
         value.each do |location, city|
           if city == loc
-              
+              schools_in_same_location << key
           end
         end
+        organized[loc] = schools_in_same_location
       end
     end
+    organized
   end
   
   
