@@ -69,12 +69,13 @@ def merge_data(keys, data)
             characteristics.each do |char, rating|
               merged_person[char] = rating  
             end
-            puts "AFTER CHAR MERGED PERSON #{merged_person}"
+            merged << merged_person
           end
         end
       end
     end
   end
+  merged
 end
 
 def find_cool(*args)
