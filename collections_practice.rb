@@ -23,7 +23,13 @@ def contain_a(*args)
 end
 
 def first_wa(*args)
-  
+  args.each do |arg|
+    arg.each do |word|
+      if word.start_with?("wa")
+        return word
+      end
+    end
+  end
 end
 
 def remove_non_strings(*args)
