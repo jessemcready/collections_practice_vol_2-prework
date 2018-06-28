@@ -1,6 +1,11 @@
 # your code goes here
 def begins_with_r(*args)
-  
+  args.each do |arg|
+    if arg[0] != "r"
+      false
+    end
+  end
+  true
 end
 
 def contain_a(*args)
