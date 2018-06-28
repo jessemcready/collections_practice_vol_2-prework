@@ -36,9 +36,12 @@ def remove_non_strings(*args)
   strings = []
   args.each do |arg|
     arg.each do |word|
-      if word.is_a?
+      if word.is_a?(String)
+        strings << word
+      end
     end
   end
+  strings
 end
 
 def count_elements(*args)
