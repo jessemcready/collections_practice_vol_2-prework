@@ -48,7 +48,7 @@ def count_elements(*args)
   args.each do |arg|
     arg.each do |pair|
       count = arg.count(pair)
-      arg[:count] = count
+      arg[:count] = count.to_i
     end
   end
 end
