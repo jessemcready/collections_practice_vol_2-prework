@@ -63,7 +63,9 @@ def merge_data(keys, data)
     pair.each do |key, value|
       merged_person[key] = value
       data.each do |person|
-        puts person
+        person.each |name, characteristics|
+          puts "#{name} : #{characteristics}"
+        end
       end
     end
   end
