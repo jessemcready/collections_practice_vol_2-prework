@@ -45,7 +45,9 @@ def remove_non_strings(*args)
 end
 
 def count_elements(*args)
-  
+  args.each do |arg|
+      
+  end
 end
 
 def merge_data(keys, data)
