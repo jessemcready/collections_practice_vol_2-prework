@@ -103,9 +103,11 @@ def find_cool(*args)
 end
 
 def organize_schools(*schools)
-  # first loop through and find all locations
+  # will hold our organized hash of city => array of schools 
   organized = {}
+  # this array will be used to know which cities are in our arguments
   locations = []
+  # first loop through and find all locations
   schools.each do |school|
     school.each do |key, value|
        value.each do |location, city|
@@ -114,20 +116,29 @@ def organize_schools(*schools)
     end
   end
   
+  # we will have duplicates, so get rid of them
   locations.uniq!
   
+  # loop through all of our cities
   locations.each do |loc|
+    # loop through our arguments 
     schools.each do |school|
+      # this array holds all schools that are in the same city 
       schools_in_same_location = []
+      # loop through each school to get to the hash with <school name>, location: <city name>
       school.each do |key, value|
         value.each do |location, city|
+          # if the city we are looking at matches our original location from line 123
           if city == loc
+              # push the school name into our schools_in_same_location array
               schools_in_same_location << key
           end
         end
+        # before we go to the next location, push our array into our organized hash 
         organized[loc] = schools_in_same_location
       end
     end
   end
+  # return our hash
   organized
 end
