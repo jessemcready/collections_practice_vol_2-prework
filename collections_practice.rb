@@ -64,7 +64,7 @@ def merge_data(keys, data)
       merged_person[key] = value
       data.each do |person|
         person.each do |name, characteristics|
-          puts "#{name} : #{characteristics}"
+          if name == merged_person[:name]
         end
       end
     end
