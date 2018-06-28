@@ -129,12 +129,6 @@ def organize_schools(*schools)
       end
       puts organized
     end
-    organized
   end
-  
-  
-  
-  
-  
-  
+  organized
 end
