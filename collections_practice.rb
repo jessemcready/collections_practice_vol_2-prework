@@ -67,7 +67,6 @@ def merge_data(keys, data)
           if name == merged_person[:first_name]
             characteristics.each do |char, rating|
               merged_person[char] = rating
-              merged << merged_person
             end
           end
         end
