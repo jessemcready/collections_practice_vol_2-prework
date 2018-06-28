@@ -115,5 +115,16 @@ def organize_schools(*schools)
   end
   
   locations.uniq!
-  puts locations
+  
+  schools.each do |school|
+    school.each do |key, value|
+      value.each do |location, city|
+          
+      end
+    end
+  end
+  
+  
+  
+  
 end
