@@ -13,8 +13,11 @@ end
 def contain_a(*args)
   args_with_a = []
   args.each do |arg|
-    if arg.include
+    if arg.include?("a")
+      args_with_a << arg
+    end 
   end
+  args_with_a
 end
 
 def first_wa(*args)
