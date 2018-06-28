@@ -2,7 +2,7 @@
 def begins_with_r(*args)
   args.each do |arg|
     arg.each do |word|
-      if !word.start_with("r")
+      if !word.start_with?("r")
         return false
       end
     end
