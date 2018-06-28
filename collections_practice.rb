@@ -50,6 +50,7 @@ def count_elements(*args)
       count = arg.count(pair)
       pair[:count] = count
     end
+    arg.flatten
   end
 end
 
