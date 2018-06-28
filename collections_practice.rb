@@ -56,7 +56,7 @@ def count_elements(*args)
 end
 
 def merge_data(keys, data)
-  
+  merged = 
 end
 
 def find_cool(*args)
