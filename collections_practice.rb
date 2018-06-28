@@ -66,7 +66,10 @@ def merge_data(keys, data)
       data.each do |person|
         person.each do |name, characteristics|
           if name == merged_person[:first_name]
-            
+            characteristics.each do |char, rating|
+              merged_person[char] = rating  
+            end
+            puts "AFTER CHAR MERGED PERSON #{merged_person}"
           end
         end
       end
