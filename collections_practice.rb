@@ -1,7 +1,7 @@
 # your code goes here
 def begins_with_r(*args)
   args.each do |arg|
-    if !arg.start
+    if !arg.start_with
       return false
     end
   end
