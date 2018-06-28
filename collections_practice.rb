@@ -52,6 +52,7 @@ def count_elements(*args)
       pair[:count] = count
     end
   end
+  args.flatten
 end
 
 def merge_data(keys, data)
