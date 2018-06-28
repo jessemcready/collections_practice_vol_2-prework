@@ -11,7 +11,9 @@ def begins_with_r(*args)
 end
 
 def contain_a(*args)
-  
+  args.each do |arg|
+    puts arg
+  end
 end
 
 def first_wa(*args)
