@@ -103,8 +103,11 @@ def find_cool(*args)
 end
 
 def organize_schools(*schools)
+  # first loop through and find all locations
+  locations
   schools.each do |school|
-    puts school.values
-    puts school.values[:location]
+    school.each do |key, value|
+        
+    end
   end
 end
