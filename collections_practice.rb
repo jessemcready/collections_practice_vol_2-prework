@@ -25,7 +25,7 @@ end
 def first_wa(*args)
   args.each do |arg|
     arg.each do |word|
-      if word.start_with?("wa")
+      if word.to_s.start_with?("wa")
         return word
       end
     end
