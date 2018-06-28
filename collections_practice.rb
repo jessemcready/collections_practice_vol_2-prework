@@ -1,8 +1,10 @@
 # your code goes here
 def begins_with_r(*args)
   args.each do |arg|
-    if !arg.start_with("r")
-      return false
+    arg.each do |word|
+      if !word.start_with("r")
+        return false
+      end
     end
   end
   true
