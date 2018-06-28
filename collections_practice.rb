@@ -103,5 +103,7 @@ def find_cool(*args)
 end
 
 def organize_schools(*schools)
-  schools.rehash
+  schools.each do |school|
+    school.rehash  
+  end
 end
