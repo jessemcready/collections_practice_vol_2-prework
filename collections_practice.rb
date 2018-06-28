@@ -116,13 +116,20 @@ def organize_schools(*schools)
   
   locations.uniq!
   
-  schools.each do |school|
-    school.each do |key, value|
-      value.each do |location, city|
-          
+  locations.each do |loc|
+    schools.each do |school|
+      schools_in_same_location = []
+      school.each do |key, value|
+        value.each do |location, city|
+          if city == loc
+              
+          end
+        end
       end
     end
   end
+  
+  
   
   
   
