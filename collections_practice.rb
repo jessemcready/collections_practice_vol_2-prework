@@ -109,7 +109,7 @@ def organize_schools(*schools)
   schools.each do |school|
     school.each do |key, value|
        value.each do |location, city|
-        puts city  
+        locations << city
        end
     end
   end
