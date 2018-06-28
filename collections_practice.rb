@@ -47,7 +47,7 @@ end
 def count_elements(*args)
   args.each do |arg|
     arg.each do |key, value|
-      
+      puts "#{key} : #{value}"
     end
   end
 end
