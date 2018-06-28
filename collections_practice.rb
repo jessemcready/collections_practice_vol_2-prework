@@ -57,10 +57,10 @@ end
 
 def merge_data(keys, data)
   merged = []
-  merged_person = {}
   
   keys.each do |pair|
     pair.each do |key, value|
+      merged_person = {}
       merged_person[key] = value
       data.each do |person|
         person.each do |name, characteristics|
@@ -68,6 +68,7 @@ def merge_data(keys, data)
             characteristics.each do |char, rating|
               merged_person[char] = rating
             end
+            merged << merged_person
           end
         end
       end
