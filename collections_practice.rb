@@ -33,11 +33,10 @@ def first_wa(*args)
 end
 
 def remove_non_strings(*args)
+  strings = []
   args.each do |arg|
     arg.each do |word|
-      if word.to_s.start_with?("wa")
-        return word
-      end
+      if word.is_a?
     end
   end
 end
