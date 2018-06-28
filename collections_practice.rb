@@ -56,7 +56,17 @@ def count_elements(*args)
 end
 
 def merge_data(keys, data)
-  merged = 
+  merged = []
+  merged_person = {}
+  
+  keys.each do |pair|
+    pair.each do |key, value|
+      merged_person[key] = value
+      data.each do |pair|
+        pa  
+      end
+    end
+  end
 end
 
 def find_cool(*args)
