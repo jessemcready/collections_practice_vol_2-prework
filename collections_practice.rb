@@ -108,7 +108,9 @@ def organize_schools(*schools)
   locations = []
   schools.each do |school|
     school.each do |key, value|
-       puts value 
+       value.each do |location, city|
+        puts city  
+       end
     end
   end
 end
